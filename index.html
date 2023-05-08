@@ -18,16 +18,16 @@
 
     <!-- aqui comienza barra de navegacion-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navegacion">
-      <div class="container">
+      <div class="container-fluid">
          <a style="color: rgb(255, 255, 255);" class="navbar-brand" href="#">
-            <img src="imagenes_integrador_front/codoacodo.png" alt="..." width="20%"  >
+            <img src="imagenes_integrador_front/codoacodo.png" alt="..." width="20%">
               Conf Bs As
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
         
-            <div class="collapse navbar-collapse" id="navbarContenido">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <div class="container">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
@@ -101,7 +101,7 @@
 
 
     <!-- INCIO de tarjetas de oradores-->
-  <section class="tarjetas section-padding" id="oradores" >
+  <section class="card section-padding" id="oradores" >
       <div class="container">
         <div class="row">
               <div class="col-md-12 ">
@@ -112,7 +112,7 @@
               </div>
         </div>
 
-        <div class="row">
+        <div class="row-tarjetas" >
           <div class="col-12 col-md-12 col-lg-4">
             <div class="card card-orador text-light text-left bg-white pb-2">
               <img src="imagenes_integrador_front/steve.jpg" class="card-img-top" alt="...">
@@ -212,25 +212,22 @@
     <!-- FIN seccion FORMULARIO -->
 
 
-    <!-- navbar link de pie de pagina -->
-    <div class="container-fluid p-4" id="navar-bottom" >
-       <div class="row text-center" id="link-navar-bottom">
-        <div class="col"><a href="" id="link-navar-bottom">Preguntas Frecuentes</a></div>
-        <div class="col"><a href="" id="link-navar-bottom">Contactanos</a></div>
-        <div class="col"><a href="" id="link-navar-bottom">Prensa</a></div>
-        <div class="col"><a href="" id="link-navar-bottom">Conferencias</a></div>
-        <div class="col"><a href="" id="link-navar-bottom">Terminos y Condiciones</a></div>
-        <div class="col"><a href="" id="link-navar-bottom">Privacidad</a></div>
-        <div class="col"><a href="" id="link-navar-bottom">Estudiantes</a></div>
-      </div>
-    </div>
-    <!-- FIN navbar link de pie de pagina -->
+
   
 
     <!-- FOOTER de pagina -->
     <footer class="bg-dark p-2 text-center">
-      <div class="container">
-         <p class="text-white">&copy All Right Reserved By @JulianPeruzzi-39955389-23050</p>
+      <div class="var-footer col-12">
+      <p>Preguntas frecuentes</p>
+      <p>Contáctenos</p>
+      <p>Prensa</p>
+      <p>Conferencias</p>
+      <p>Términos y condiciones</p>
+      <p>Privacidad</sp>
+      <p>Estudiantes</p> 
+    </div>
+      <div class="container">    
+      <p>&copy All Right Reserved By @JulianPeruzzi-39955389-23050</p>
       </div>
     </footer>
     
