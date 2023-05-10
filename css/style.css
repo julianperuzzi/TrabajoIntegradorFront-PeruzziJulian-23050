@@ -1,8 +1,10 @@
 .section-padding {
 	padding: 100px 0;
+	border-color: white;
 }
-body {
-	background: #f1fbff;
+
+.navbar-nav {
+   justify-content: flex-end;
 }
 
 .carousel-item {
@@ -29,17 +31,14 @@ body {
 	background: rgba(0, 0, 0, 0.5);
 	z-index: 1;
 }
-.w-100 {
-	height: 100vh;
-}
-.row-tarjetas{
 
+.row-tarjetas{
     display: flex;
     justify-content: left;
-    gap: 30px;
-    overflow-x: scroll;
+    gap: 10px;
+    overflow-x: auto;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
 }
 
@@ -49,10 +48,9 @@ body {
 }
 
 .card-orador{
-    margin: 10%;
+    margin: 5%;
     background-color: rgb(255, 255, 255);
     background-image:radial-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.2)) ;
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 .card-orador:hover{
     zoom: 1.2;
@@ -80,25 +78,53 @@ footer{
 
 
 
+@media only screen and (min-width: 992px){
+	.carousel-caption {
+		bottom: 150px;
+	
+	}
+	.row-tarjetas {
+		display: flex;
+		gap: 10px;
+		overflow-x: auto;
+		flex-direction: row;
+		align-content: center;
+		align-items: flex-start;
+		justify-content: flex-end;		
+	}
+		.imagen-carr{
+		width: 200vh;
+		height: 100vh;
+		} 
+
+		.row-tarjetas::-webkit-scrollbar {
+			display: none;
+			}
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.carousel-caption {
-		bottom: 370px;
+		bottom: 100px;
+	
 	}
 	.carousel-caption p {
 		width: 100%;
+		font-size: 15px;
+		
 	}
-	.card {
-		margin-bottom: 30px;
-	}
-
 }
+
+
 @media only screen and (max-width: 767px) {
+	a.navbar-brand {
+		display: contents;
+	}
 	.navbar-nav {
 		text-align: center;
 	}
 	.carousel-caption {
-		bottom: 125px;
+		bottom: 100px;
 	}
 	.carousel-caption h5 {
 		font-size: 17px;
@@ -110,9 +136,12 @@ footer{
 	.carousel-caption p {
 		width: 100%;
 		line-height: 1.6;
-		font-size: 12px;
+		font-size: 15px;
 	}
-	.card {
-		margin-bottom: 30px;
+
+	.row-tarjetas p{
+		font-size: 15px;
 	}
+
+
 }
