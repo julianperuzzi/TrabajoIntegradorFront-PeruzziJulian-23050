@@ -98,7 +98,7 @@ footer{
 		} 
 
 		.row-tarjetas::-webkit-scrollbar {
-			display: none;
+		display: none;
 			}
 }
 

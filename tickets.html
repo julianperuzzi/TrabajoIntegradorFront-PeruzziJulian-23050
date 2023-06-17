@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Integrador Front 23050 - Peruzzi Julian - 39955389</title>
+    <link rel="shortcut icon" href="imagenes_integrador_front/codoacodo.png" />
+
+    <!-- libreria a bootstrap 5.0 y css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tickets.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navegacion">
+            <div class="container-fluid">
+                <a style="color: rgb(255, 255, 255);" class="navbar-brand" href="index.html">
+                    <img src="imagenes_integrador_front/codoacodo.png" alt="..." width="20%">
+                    Conf Bs As
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="container">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">La Conferencia <span class="sr-only"></span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#oradores">Los Oradores</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#date">El lugar y la fecha</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Conviértete en un Orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: green;">Comprar Tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- INICIO de tarjetas -->
+        <section class="card section-padding" id="promos">
+            <div class="container">
+                <div class="row-tarjetas">
+                    <div class="col-8 col-md-6 col-lg-4" id="descuento-estudiante">
+                        <div class="card card-promo text-light text-left bg-white pb-2">
+                            <div class="card-body text-dark">
+                                <h1>Estudiante</h1>
+                                <p>Tiene un descuento</p>
+                                <h2>80%</h2>
+                                <p>* presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-8 col-md-6 col-lg-4" id="descuento-trainee">
+                        <div class="card card-promo text-light text-left bg-white pb-2">
+                            <div class="card-body text-dark">
+                                <h1>Trainee</h1>
+                                <p>Tiene un descuento</p>
+                                <h2>50%</h2>
+                                <p>* presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-8 col-md-6 col-lg-4" id="descuento-junior">
+                        <div class="card card-promo text-light text-left bg-white pb-2">
+                            <div class="card-body text-dark">
+                                <h1>Junior</h1>
+                                <p>Tiene un descuento</p>
+                                <h2>15%</h2>
+                                <p>* presentar documentación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN de tarjetas -->
+
+        <section class="contacto" id="contacto">
+            <div class="container mt-2 mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-2 pt-3">
+                            <h2>VENTA</h2>
+                            <h1>VALOR DEL TICKET $200</h1>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="row  gt-5">
+                        <div class="col mb-1">
+                            <label for="validationDefault01"></label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre"
+                                required>
+                        </div>
+
+                        <div class="col">
+                            <label for="validationDefault02"></label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+
+                        <div class="col-6">
+                            <label for="validationDefault03">Cantidad</label>
+                            <input type="text" class="form-control" id="validationDefault03" placeholder="Cantidad"
+                                required>
+                        </div>
+
+                        <div class="col-6">
+                            <label class="" for="specificSizeSelect">Categoría</label>
+                            <select class="form-select" id="specificSizeSelect">
+                                <option selected>Entrada General</option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12" id="total-a-pagar">
+                          <div class="output-container">                         
+                              <p>Resultado: <output id="resultado"></output></p>
+                              
+                          </div>
+                      </div>
+
+                        <div class="col-6 mt-3" style="text-align: center;">
+                            <button class="btn  col-6 "
+                                style="background-color: rgb(237, 97, 97); border-color: rgb(255, 169, 169); padding:1em; color: aliceblue;"
+                                id="reset-button">Borrar</button>
+                        </div>
+
+                        <div class="col-6 mt-3" style="text-align: center;">
+                            <button class="btn  col-6 "
+                                style="background-color: rgb(120, 189, 77); border-color: rgb(123, 154, 73); padding:1em; color: aliceblue;"
+                                id="resumen-button">Resumen</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER de pagina -->
+    <footer class="bg-dark p-2 text-center">
+        <div class="var-footer col-12">
+            <p>Preguntas frecuentes</p>
+            <p>Contáctenos</p>
+            <p>Prensa</p>
+            <p>Conferencias</p>
+            <p>Términos y condiciones</p>
+            <p>Privacidad</p>
+            <p>Estudiantes</p>
+        </div>
+        <div class="container">
+            <p>&copy All Right Reserved By @JulianPeruzzi-39955389-23050</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tickets.js"></script>
+</body>
+</html>

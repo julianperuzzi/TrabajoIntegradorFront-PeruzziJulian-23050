@@ -1,0 +1,84 @@
+
+.section-padding {
+	padding: 150px 0 0 0;
+	border-color: white;
+}
+.navbar-nav {
+   justify-content: flex-end;
+	font-size: large;
+}
+.row-tarjetas{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+#promos{
+	background: #ffffff;
+	background-image: linear-gradient(rgba(255, 183, 0, 0.666), rgb(255, 255, 255)
+	);
+}
+.card-promo{
+    margin: 5%;
+    background-color: rgb(255, 255, 255);
+    background-image:radial-gradient(rgba(255, 255, 255, 0.73), rgba(255, 149, 0, 0.199)) ;
+}
+.output-container {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px 10px 0px 10px;
+	margin-top: 1rem;
+	height: 3rem;
+
+}
+
+footer{
+	color: white;
+	background: linear-gradient(to right, rgb(253, 191, 56), rgb(254, 161, 95));
+}
+.var-footer{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+@media only screen and (min-width: 992px){
+
+	.row-tarjetas {
+		display: flex;
+		gap: 10px;
+		overflow-x: auto;
+		flex-direction: row;
+		align-content: center;
+		align-items: flex-start;
+		justify-content: flex-end;		
+	}
+
+		.row-tarjetas::-webkit-scrollbar {
+		display: none;
+			}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	a.navbar-brand {
+		display: contents;
+	}
+	.navbar-nav {
+		text-align: center;
+	}
+	.row-tarjetas p{
+		font-size: 15px;
+	}
+
+}
