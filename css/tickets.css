@@ -29,9 +29,13 @@
 .output-container {
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	padding: 10px 10px 0px 10px;
+	padding: 10px;
 	margin-top: 1rem;
 	height: 3rem;
+	font-style: italic;
+	font-size: larger;
+	font-weight: 500;
+
 
 }
 
